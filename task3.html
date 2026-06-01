@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="bg">Dark</button>
+    <h1 id="heading">this is the html text</h1>
+
+    <div id="outer"></div>
+
+    <script>
+        const bg = document.getElementById("bg");
+        const outer = document.getElementById("outer");
+
+        bg.addEventListener("click", () => {
+
+            const inner = document.createElement("div");
+
+            inner.setAttribute("id", "inner");
+
+            inner.innerHTML = "<h1>this is appended through js</h1>";
+
+            outer.appendChild(inner);
+
+        });
+    </script>
+
+</body>
+</html>
+

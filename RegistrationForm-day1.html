@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 50px;
+        }
+        form {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Registration Form</h1>
+        
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" placeholder="Enter username" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="Enter email" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" required><br><br>
+
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" id="mobile" placeholder="Enter mobile number" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> Female<br><br>
+
+        <input type="checkbox" required> I agree to terms<br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

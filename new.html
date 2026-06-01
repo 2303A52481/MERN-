@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Document</title>
+    </head> 
+    <body>
+        <!-- <h1 id="heading">Hello, this is html text</h1>
+        <div id="main">
+
+        </div>
+        <a id="hyperlink" href="https://flipkart.com">click</a> -->
+        <button id="io">Click Me</button>
+        <div id="outer">
+
+        </div>
+        <script>
+            // const heading=document.getElementById("heading");
+            // heading.textContent="This is injected in js"
+            // const main=document.querySelector("#main")
+            // main.innerHTML="<h1> this is through the js as an heading</h1>"
+            // const hyperlink=document.getElementById("hyperlink")
+            // hyperlink.setAttribute("href","https://www.amazon.in")
+
+            
+            const outer=document.getElementById("outer")
+            const inner=document.createElement("div")
+            const io=document.getElementById("io")
+            io.addEventListener("click",()=> {
+                inner.setAttribute("id","inner")
+                inner.innerHTML="<h1> this is appended through js</h1>"
+                outer.appendChild(inner)
+            })
+
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

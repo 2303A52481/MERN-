@@ -1,0 +1,96 @@
+extra small - <576px
+small >=576px
+medium >=768px
+large >=992px
+extra large >=1200px
+extra extra large >=1400px
+format=shift+alt+f
+<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+me=left
+mx=middle
+ms=right
+
+class="col-md-6 col-lg-4 col-sm-12"
+container->row->col->col
+
+
+javascript is a single threaded synchronous programming language. it converts the static pages into the dynamic pages.
+single threaded definition: only one task can be executed at a runtime
+multiple threaded definition: multiple tasks can be executed at a runtime. example: java, python, c++
+synchronous : line by line execution of code. the next line of code will be executed only after the previous line of code is executed.
+asynchronous : the next line of code will be executed without waiting for the previous line of code to be executed. it allows multiple tasks to be executed at a runtime. example: setTimeout, setInterval, fetch, promises, async/await.
+js by default synchrous but we can make it asynchronous by using callback functions, promises, async/await.
+js is interpreted by default . both compiled and interpreted language. it is interpreted by the browser and compiled by the v8 engine in chrome.
+
+Variables in JavaScript: is used to stote data values. 
+ var  a=10 , var a=20 redeclare
+ let a=10 initi
+ leta: X cant redeclare
+let
+const
+
+hoisting : -> scoping
+hoisting: ia a js behaviour where the variable declarations and function declarations are movied to their top of their respective scopes.
+scopes 3 types: global scope, function scope, block scope , lexical scope
+
+Hoisting (Imp Interview question)
+It is a js behaviour where the variable declarations and function declarations are moved to thier top of their respective scopes-(->temporal dead zone
+                                                 (this zone will be in background we can't see it.)).
+It can be used only in var and let.
+
+Types of scopes:
+
+Global Scope
+Block Scope
+Functional scope and 
+Lexical scope(Adv)
+----
+Var is a Global scoped Variable.
+Let and Const are Block scoped variables.
+Let and Const are Hoisting to the top of the scopes.
+Var is not even going to the scope zone.
+datatypes : primitive and non-primitive
+primitive : string, number, boolean, null, undefined, symbol , bigint
+null and undefined difference : 
+nonprimitive : object, array, function
+array : it is a collection of data. it can store multiple values in a single variable. it is an ordered collection of data. it is a non-primitive data type. it is a reference type. it is mutable.
+object : it is a collection of key value pairs. it is a non-primitive data type. it is a reference type. it is mutable.
+function : it is a block of code that can be executed when called. it is a non-primitive data type. it is a reference type. it is mutable.
+
+operators: arithmetic.comparison, logical, assignment
+== : loose equality operator. it converts the operands to the same type and then compares them.
+=== : strict equality operator. it first checks the value and then checks the type. it is a strict equality operator.
+
+conditinal statmenents: if, else if, else, switch
+if(condition)
+[
+    //block of the code
+]else{
+    //block of cofr
+}else if{//block of code
+}
+
+loopa: while, do while,for, for in, for of
+for of is used for iterating over the strings and array indexes
+for in is used for iterating over the object values
+
+
+how to print if a string is palindrome or not
+let str=prompt("Enter a string");
+
+functions:
+functions in js is a block of code that can be executed when called. it is a non-primitive data type. it is a reference type. it is mutable.
+7 types of functions in js:
+1.named function ->
+2. anonymous function ->
+3.function expression ->
+4. arrow function  -> common one -> short hand writing of a ananymous function.
+5. IIFE (Immediately Invoked Function Expression) : the function calling can be aclled after the function creation.
+6.callback function : im for asynchronous operations . passing one function as an arguemnt to the another function is called callback function. 
+7. higher order function : one or more functions can be passed as an argument to the function which returns the output also as a function.
+
+which property is used for spacing outside an element? margin
+which bootsrtap class creates a row? row
+which property is used for animation duration? animation-duration
+how do you make text italic in CSS? font-style: italic;
+what does z index property  do in css

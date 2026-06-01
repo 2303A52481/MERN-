@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Layout</title>
+        <style>
+            .row1 {
+                display: grid;
+                grid-template-columns: repeat(1,1fr) 700px repeat(1,1fr);
+                gap: 5px;
+                margin-bottom: 5px;
+            }
+            .row2 {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 5px;
+                margin-bottom: 5px;
+
+            }
+            .row3 {
+                display: grid;
+                grid-template-columns: 7fr 3fr;
+                gap: 5px;
+                margin-bottom: 5px;
+            }
+            .row4 {
+                display: grid;
+                grid-template-columns: 3fr 7fr;
+                gap: 5px;
+                margin-bottom: 5px;
+            }
+            .item {
+                background-color: rgb(205, 91, 148);
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                padding: 77px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row1">
+            <div class="item"></div>
+            <div class="item">Sindhu Katakam<br> 2303A52481</div>
+            <div class="item"></div>
+        </div>
+        <div class="row2">
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="row3">
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="row4">
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </body>
+</html>

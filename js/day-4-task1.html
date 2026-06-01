@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3 id="text" style="display:none">This is the toggle text</h3>
+        <button id="toggle">Click Me</button>
+        <script>
+            const toggle=document.getElementById("toggle")
+const text=document.getElementById("text")
+
+toggle.addEventListener("click",()=>{
+    if (text.style.display==="none"){
+        text.style.display="block"
+    }else{
+        text.style.display="none"
+    }
+})
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

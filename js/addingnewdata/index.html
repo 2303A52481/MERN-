@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        body.style.backgroundColor="white"
+        <button id="bg">Dark</button>
+        <h1 id="heading"> this is the html text</h1>
+        <div id="main">
+            
+
+        </div>
+        <a id="hyperlink" href="https://Flipkart.com">click</a>
+        <div id="outer">
+
+        </div>
+        <h3 id="text"style="display:none">This is the text to toggle</h3>
+        <div id="toggle">
+            <script>
+            const toggle=document.getElementById("toggle");
+            const text=document.getElementById("text");
+            toggle.addEventListener("click",()=>){
+                if(text.style.display==="none"){
+                    text.style.display="block"
+                }
+                else{
+                    text.style.display="none"
+                }}
+        </script>
+        <script>
+            document.body.style.backgroundColour="lightblue"
+        </script>
+    </div>
+        <script>
+            const heading=document.getElementById("heading")
+            heading.textContent="this is injected in js"
+            const main=document.querySelector("#main")
+            main.innerHTML="<h1>this is through the js as an heading</h1>"
+            const hyperlink=document.getElementById("hyperlink")
+            hyperlink.setAttribute("href","https://amazon.in")
+
+            const outer=document.getElementById("outer")
+            const inner=document.createElement('div')
+            inner.setAttribute("id","inner")
+            inner.innerHTML="<h1>this is appended through js</h1>"
+            outer.appendChild(inner)
+
+        </script>
+        <script>
+        const bg=document.getElementById("bg")
+        bg.addEventListener("click",()=>{
+            if(document.body.style.background==="white"){
+                document.body.style.background="black"
+                bg.textContent="Light"
+                document.body.style.color="white"
+            }
+            else{
+                document.body.style.background="white";
+                bg.textContent="Dark";
+                document.body.style.color="black"
+            }
+        })
+        </script>
+    </body>
+</html>

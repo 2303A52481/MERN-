@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Layout</title>
+        <style>
+            #container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); 
+                /* grid-template-rows: repeat(2, 1fr); */
+                /* grid-template-columns: 100px 200px 100px; */
+                gap: 10px;
+            }
+            .box{
+                background-color: lightblue;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <!-- .box*6 -->
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+
+        </div>
+    </body>

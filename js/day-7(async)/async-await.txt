@@ -1,0 +1,51 @@
+event loop
+call stack
+web api
+
+microtask queue
+macrotask queue
+
+event loop
+
+ee = event emitter
+start
+
+event loop checks synchronous or asynchronous
+if synchronous directly sends to call stack
+
+queue microstask 
+-> normal -> promise
+-> inside promise -> then last of the queue
+
+----------------------------------------------------------------------------------------------
+
+async function greet(){
+    return "Hello";
+}
+greet().then(msg=> console.log(msg)); // Output: Hello
+
+------------------------------------------------------------------------------------------------------------
+
+API - application programming interface
+communication between the servers
+authentication - signup/signin
+authorization - access control
+
+json - javascript object notation
+json - cant use methods
+{
+    "name": "John",
+    "age": 30
+}
+and object - can use methods
+{
+    name: "John",
+    age: 30,
+    greet: function() {
+        console.log("Hello!");
+}
+
+----------------------------------------------------------------------------
+fetch(" ")= output will always be a string
+
+

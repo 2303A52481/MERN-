@@ -1,0 +1,79 @@
+| Symbol  | Meaning         |
+| ------- | --------------- |
+| `.`     | any character   |
+| `+`     | one or more     |
+| `*`     | zero or more    |
+| `?`     | optional        |
+| `^`     | start           |
+| `$`     | end             |
+| `[ ]`   | range/set       |
+| `{n}`   | exact n         |
+| `{n,m}` | between n and m |
+| `\d`    | digit           |
+| `\w`    | letter/digit/_  |
+| `\s`    | space           |
+| `\`     | escape          |
+
+ex:
+^[A-Z]+$
+Explanation
+Symbol	Meaning
+^	start
+[A-Z]	uppercase letters A to Z
++	one or more
+$	end
+Matches
+✅ HELLO
+✅ ABC
+
+^[a-zA-Z]+$
+Explanation
+Symbol	Meaning
+[a-z]	lowercase
+[A-Z]	uppercase
++	one or more
+Matches ✅ Hello ✅ ABC ✅ java
+
+
+2 .
+^[0-9]+$
+or
+^\d+$
+Explanation
+Symbol	Meaning
+[0-9]	digits
+\d	digit shortcut
++	one or more
+Matches ✅ 12345 ✅ 786
+Does not match❌ 12a
+
+^[!@#$%^&*()]+$
+Explanation
+Symbol	Meaning
+[ ]	choose from list
+!@#$...	allowed special chars
++	one or more
+Matches ✅ @ ✅ #$%
+Does not match ❌ abc ❌ 123
+
+6. Email
+Regex
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+Explanation
+Username part
+[a-zA-Z0-9._%+-]+
+letters, digits, dot, underscore
+
+@
+
+required
+
+Domain
+[a-zA-Z0-9.-]+
+Dot
+\.
+Extension
+[a-zA-Z]{2,}
+2 or more letters
+Matches ✅ abc@gmail.com ✅ student123@yahoo.in
+Does not match ❌ abc@ ❌ @gmail.com

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            .box{
+                background-color: lightblue;
+                padding:20px;
+                text-align: center;
+                display: grid;
+                grid-template-columns: 200px;
+                gap: 10px;
+
+                
+            }
+            @media (min-width: 576px) {
+                .h1{
+                    color: violet;
+                }
+            }
+            @media (min-width: 768px) {
+                .h2{
+                    background-color: indigo;
+                }
+            }
+            @media (min-width: 992px) {
+                .h3{
+                    background-color: blue;
+                }
+            }
+            @media (min-width: 1200px) {
+                .h4{
+                    background-color: green;
+                }
+            }
+             @media (min-width: 1400px) {
+                .h5{
+                    background-color: yellow;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <!-- .item*6 -->
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+
+        </div>
+    </body>
+</html>
